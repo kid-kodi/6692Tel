@@ -7,7 +7,7 @@ if (!process.env.DEBUG) {
 const app = require('./server/app.js')
 const debug = require('debug')('peercalls')
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 9200
 const server = app.listen(port, () => debug('Listening on: %s', port))
 
 function close () {
